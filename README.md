@@ -1,4 +1,3 @@
-Sure! Below is a simple README documentation for your GitHub project.
 
 ---
 
@@ -19,7 +18,7 @@ Before running the project, make sure you have the following installed:
 Clone this repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/your-username/edom-puppeteer-automation.git
+git clone https://github.com/DumbiFadhil/edom-puppeteer.git
 ```
 
 ### 2. Install dependencies
@@ -27,21 +26,19 @@ git clone https://github.com/your-username/edom-puppeteer-automation.git
 Navigate to the project directory and install the required dependencies:
 
 ```bash
-cd edom-puppeteer-automation
+cd edom-puppeteer
 npm install
 ```
 
 ### 3. Create a `.env` file
 
-Create a `.env` file in the root of the project and add your **username** and **password** for login, along with the score you want to give for each scoring subject:
+Create a `.env` file in the root of the project and add your **username** and **password** for login, along with the score you want to give for each scoring field:
 
 ```env
 USERNAME=your-username
 PASSWORD=your-password
 RADIO_VALUE=5 (optional, leave blank to randomize each radio value)
 ```
-
-**Note**: Do not commit your `.env` file to version control.
 
 ### 4. Run the script
 
