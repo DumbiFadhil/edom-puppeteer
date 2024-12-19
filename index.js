@@ -53,12 +53,15 @@ async function automateDashboard() {
             });
           }, radioValue);
 
+          await page.waitForSelector('button[type="button"].btn.btn-primary', { visible: true });
           await page.click('button[type="button"].btn.btn-primary');
           await wait(1000);
-
+          
+          await page.waitForSelector('.swal2-confirm.swal2-styled', { visible: true });
           await page.click('.swal2-confirm.swal2-styled');
           await wait(1000);
-
+          
+          await page.waitForSelector('a.btn.btn-light.shadow-md', { visible: true });
           await page.click('a.btn.btn-light.shadow-md');
           await wait(1000);
         }
